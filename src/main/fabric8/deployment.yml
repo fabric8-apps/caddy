@@ -1,0 +1,30 @@
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: caddy
+        image: fabric8/fabric8-online-docs:${fabric8-online-docs.version}
+        readinessProbe:
+          httpGet:
+            path: "/"
+            port: 8080
+          initialDelaySeconds: 5
+          timeoutSeconds: 5
+        livenessProbe:
+          httpGet:
+            path: "/"
+            port: 8080
+          initialDelaySeconds: 60
+          timeoutSeconds: 10
+        volumeMounts:
+        - name: caddy-config
+          mountPath: /etc/caddy/
+          readOnly: true
+      volumes:
+      - name: caddy-config
+        configMap:
+          name: caddy
+          items:
+          - key: Caddyfile
+            path: Caddyfile

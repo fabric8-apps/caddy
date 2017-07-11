@@ -1,0 +1,14 @@
+data:
+  Caddyfile: |-
+    0.0.0.0:8080
+
+    root /var/www/html
+
+    log stdout
+
+    errors stdout
+
+    ext .html .htm
+
+    browse
+    prometheus
