@@ -1,4 +1,4 @@
 spec:
   to:
     kind: Service
-    name: "caddy"
+    name: "fabric8-online-docs-app"
