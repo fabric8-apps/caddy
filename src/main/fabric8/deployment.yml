@@ -24,7 +24,7 @@ spec:
       volumes:
       - name: caddy-config
         configMap:
-          name: caddy
+          name: fabric8-online-docs-app
           items:
           - key: Caddyfile
             path: Caddyfile
