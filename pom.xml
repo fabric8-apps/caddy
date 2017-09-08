@@ -70,7 +70,7 @@
   </scm>
 
   <properties>
-    <fabric8-online-docs.version>v22b2d87</fabric8-online-docs.version>
+    <fabric8-online-docs.version>v603a7cc</fabric8-online-docs.version>
 
     <fabric8.maven.plugin.version>3.5.22</fabric8.maven.plugin.version>
     <maven.enforcer.plugin.version>1.4</maven.enforcer.plugin.version>
