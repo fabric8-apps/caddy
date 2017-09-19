@@ -26,7 +26,7 @@
 
   <groupId>io.fabric8.apps</groupId>
   <artifactId>fabric8-online-docs-app</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.12</version>
   <packaging>pom</packaging>
 
   <name>Fabric8 Apps :: fabric8 online docs</name>
